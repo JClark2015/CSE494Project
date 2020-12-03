@@ -5,74 +5,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://d3js.org/d3.v5.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-		<title>CSE 494 Homework #1: Miguel Cuen</title>
-	
-	<style>
+    <title>Mental Health During Covid 19</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript"></script>
 
-    * {
-      box-sizing: border-box;
-    }
-		.imageColumn {
-			float: left;
-      width: 25%;
-      padding: 10px;
-			maxwidth: 970px;
-		}
-		h1 {
-			text-align: center;
-		}
-		/* img {
-			width:100%;
-			border: 1px solid gray;
-		}
-		p {
-			text-align: justify;
-			text-justify: inter-word;
-		} */
-  </style>
-  </head>
-    <body>
-
-	    <div class="container">
-			<header>
-        <h2 style=>Mental Health During Covid 19</h2>
-        
-        <div class="tab">
-            <button class="tablinks" onclick="clickHandle(event, 'Vis1')">Visualization 1</button>
-            <button class="tablinks" onclick="clickHandle(event, 'Vis2')">Visualization 2</button>
-            <button class="tablinks" onclick="clickHandle(event, 'Vis3')">Visualization 3</button>
-        </div>
-
-			</header>
+      <select id='ageInput'>
+      <option value='18 - 29 years'>18 - 29 years</option>
+      <option value='30 - 39 years'>30 - 39 years</option>
+      <option value='40 - 49 years'>40 - 49 years</option>
+      <option value='50 - 59 years'> 50 - 59 years</option>
+      <option value='60 - 69 years'>60 - 69 years</option>
+      <option value='70 - 79 years'>70 - 79 years</option>
+      <option value='80 years and above'>80 years and above</option>
+      <option value='United States'>US Average</option>
+      </select>
       
-          <div class="alignRow">
-              <div class="imageColumn">
-                  <img src="Visualization1.png" alt="Vis1" style="width:100%">
-              </div>
-              <div class="imageColumn">
-                  <img src="Visualization2.png" alt="Vis2" style="width:100%">
-              </div>
-              <div class="imageColumn">
-                  <img src="Visualization3.png" alt="Vis3" style="width:100%">
-              </div>
-          </div>>
+      <div id = 'tooltip'></div>
 
-        
-  
-          <div class = "Row">
-            <div class = "column">
-		        	<h4>Visualization name</h4>
-			        <div style="width:100%;text-align:center;"></div>
+      <div id = 'divsvg'><script src="vis2.js"></script></div>
 
-			      <p>
-                <b> Description of data </b>
-                <b> Description of data </b>
-                <b> Description of data </b>
-                <b> Description of data </b>
-            </p>
-            
-          </div>
-		 </div>
-	  </body>
+    </head>
+    <body>
+        <div id="regions_div" style="width: 900px; height: 500px;"></div>>
+        <script src="map.js"></script>
+    </body>
+
 </html>
